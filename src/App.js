@@ -1,8 +1,12 @@
-import LoginForm from "./pages/LoginForm";
+import { Routes, Route } from "react-router-dom";
+import LoginFormPage from "./pages/LoginFormPage";
+
 function App() {
   return (
     <div className="bg-radial-gradient  h-screen">
-      <LoginForm />
+      <Routes>
+        <Route path="/" element={<LoginFormPage />} />
+      </Routes>
     </div>
   );
 }

@@ -84,9 +84,12 @@ function LoginForm() {
             </button>
           </div>
         ) : (
-          <div className="bg-white w-2/5 max-md:w-3/4 rounded-xl h-3/5  items-center">
+          <div className="bg-white w-2/5 max-md:w-3/4 rounded-xl py-8 space-y-8 ">
+            <h1 className="w-full text-center text-3xl text-[#040404] ">
+              Log In
+            </h1>
             <form
-              className="flex flex-col justify-center h-full  items-center gap-8  "
+              className="flex flex-col justify-center w-full  items-center gap-6  "
               onSubmit={handleSubmit}
             >
               <input
@@ -102,7 +105,7 @@ function LoginForm() {
                   })
                 }
               ></input>
-              <div className="relative w-5/6">
+              <div className="relative w-5/6  flex flex-col gap-2 items-end">
                 <input
                   className="border-2 w-full py-1 px-2 outline-none rounded-full pr-10"
                   type={state.showPassword ? "text" : "password"}
@@ -116,6 +119,7 @@ function LoginForm() {
                     })
                   }
                 />
+
                 <button
                   type="button"
                   className="absolute right-3 top-1/2 transform -translate-y-1/2"
